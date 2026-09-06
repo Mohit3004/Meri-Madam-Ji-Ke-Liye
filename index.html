@@ -299,12 +299,12 @@
   }
   .hint.show{ opacity: 0.55; }
 
-  /* ---------- Floating hearts on intro ---------- */
+  /* ---------- Floating hearts & flowers on all screens ---------- */
   #floatHearts{
     position:absolute; inset:0;
     pointer-events:none;
     overflow:hidden;
-    z-index: 2;
+    z-index: 4;
   }
   #introStars{
     position:absolute; inset:0;
@@ -501,7 +501,7 @@ let slideEls = [];
   }
 })();
 
-// Build floating hearts (intro only) — lots of them, varied colors/sizes/speed
+// Build floating hearts & flowers for all screens — lots of them, varied colors/sizes/speed
 (function buildFloatingHearts(){
   const wrap = document.getElementById('floatHearts');
   const colors = ['#ffffff', '#fff0f4', '#ffd1de', '#ff5c85', '#c2255c', '#ffe066'];
